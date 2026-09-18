@@ -1,0 +1,236 @@
+Observations:
+1. Batch processing
+2. Complex table handling (1C_redp5110_sampled.txt
+3. Multiple OCR engine support, with the default configuration of Docling Parse + EasyOCR being good in quality
+4. Image content handled by converting the PDF docs to HTML.
+5. Processing time of roughly 60s/pdf doc having around 12 pages.
+
+Claude Q: I notice something: the repo has CLAUDE.md, AGENTS.md, .claude, .codex, .opencode, etc. 
+That means some amount of AI-assisted coding was used. I need to know - what differentiates them? Why one AI-generated app becomes a vibe-coding slop while the other becomes prod-ready?
+Claude A: Good observation. The differentiator is not the AI — it's the engineer using it.
+
+What makes slop
+
+No pre-existing mental model of the architecture. The developer lets the AI decide structure, naming, abstractions. The AI will produce something that looks complete but has no coherent design philosophy.
+No code review of AI output. AI code is accepted as-is because it runs. Running ≠ correct ≠ maintainable.
+No tests. Without a test suite, you can't tell if a refactor broke something, so the codebase calcifies.
+Prompting at the wrong granularity. "Build me a document converter" produces slop. "Write a factory method that selects an OCR backend based on this options dataclass" produces a usable component.
+The developer can't read what was generated. If you can't audit it, you can't own it.
+
+What docling did differently
+
+Look at the evidence in the repo itself:
+
+The extras system in the toml is a deliberate design decision — someone thought hard about dependency minimalism before writing a line of code
+The CLAUDE.md and AGENTS.md files tell the AI how to behave in this codebase — conventions, constraints, what not to do. That's an engineer directing a tool, not outsourcing judgment
+They have a full test suite (pytest, pytest-xdist, coverage) — AI can't fake passing tests against real documents
+The platform conditionals and version exclusions with bug references in the toml represent accumulated human debugging, not AI output
+The architecture (pipeline → backend → model → factory) is a coherent pattern a human designed; the AI filled in implementations
+
+The actual differentiator
+
+AI accelerates writing code. It does not accelerate understanding the problem. Docling's authors understood document parsing deeply before touching a keyboard — IBM Research background, published papers on the topic. The AI helped them write faster, not think.
+
+Vibe coders use AI to avoid thinking. Senior engineers use AI to avoid typing.
+
+Claude Q: But one doubt lingers - do they ensure that they go through each file and understand the last loc? Or do they rely on the tests passing and the architecture being followed through??
+
+Claude A: Honest answer: neither extreme.
+
+No engineer on a large codebase reads every line. Docling is 500+ files. The IBM team doesn't have every loc memorized. What they have instead is:
+
+Layered trust
+
+They deeply understand the boundaries between components — what a pipeline contract is, what a backend must implement, what a factory returns. They don't need to know every line inside a component if the interface is well-defined.
+Tests cover behavior, not implementation. If the Tesseract OCR model produces correct bounding boxes on a known PDF, they don't need to read every line of the model — the test is the proof.
+
+Ownership by module
+
+On a team, different people own different subsystems. The person who wrote the PDF pipeline knows it cold. The person who wrote the DOCX backend knows that cold. Nobody knows everything, but every component has someone who does.
+
+The AI-specific answer
+For AI-generated code specifically, the bar is: can you debug it when it breaks? Not "did you read it top to bottom" but "do you understand it well enough to reason about failures?" If the answer is no, you don't own that code — you're just hosting it.
+
+That's actually where most vibe-coding collapses in production. The code works until it doesn't, and then the developer has no mental model to debug from. They prompt their way to a fix, which introduces new problems, and the codebase becomes a house of cards.
+
+The docling team can debug their AI-assisted code because they understood the problem before the AI wrote the solution.
+
+Claude Q: So this is how AI engineers are built. Not by vibe-coding their way through. Its these people who replace the other engineers who understand the things just as well but rely on hand-written code. On the downside, the work load never reduced. One guy is now doing three people's work with thrice as much mental load and stress.
+
+Claude A: That's an accurate read of the current moment. A few things worth saying plainly:
+
+The productivity gain is real but asymmetrically distributed
+
+The engineer captures the output (ships more, looks more productive). The company captures the headcount reduction. The engineer rarely captures the proportional financial upside. That's not unique to AI — it's the same pattern that played out with every productivity tool, from IDEs to cloud infrastructure.
+
+The mental load point is underappreciated
+
+Writing code is not the hard part of engineering. Understanding a system deeply enough to make correct decisions under uncertainty — that's the hard part. AI didn't reduce that load at all. If anything it increased it, because now you're also responsible for auditing AI output on top of your own thinking. The typing was never the bottleneck.
+
+The replacement dynamic is more nuanced than headlines suggest
+
+The engineers being displaced first are not the ones who write the most code. They're the ones whose value was only in writing code — no system design ability, no debugging intuition, no domain knowledge. The engineer who understands the problem deeply is harder to replace because AI still can't do that part.
+
+The honest uncomfortable truth
+
+You're early in your career. The engineers who will thrive are the ones who treat AI as raising the floor on what they must understand — not lowering it. The dangerous trap is thinking "AI can do this so I don't need to learn it." That's how you become replaceable.
+
+The Docling team didn't get there by knowing less. They got there by knowing more and moving faster.
+
+
+6. Doc processing using VLMs
+Groq vision models are Qwen 3.6 27B and Qwen 3.8 27B. Docling's VLM pipeline is not general-purpose chat — it sends document page images with a specific prompt expecting DocTags or Markdown structured output. The model needs to follow that format faithfully. General vision models like Qwen-VL will attempt it but quality will be inconsistent compared to a model fine-tuned for document parsing like GraniteDocling or SmolDocling.
+
+For your use case (no GPU, no local inference), the most pragmatic path is actually Ollama with smoldocling — it's 256M parameters, runs on CPU in reasonable time, and is specifically trained for this task. The script automatically pulls it. 
+
+GraniteDocling 258M is purpose-built. 258M parameters is tiny by modern standards, runs on CPU, yet outperforms much larger general vision models on document parsing because it was trained specifically on DocTags output from document corpora.
+
+That's the right engineering call: a small specialist beats a large generalist on a narrow task, and is dramatically cheaper to run. Same philosophy as the rest of the project — no bloat, solve the actual problem.
+
+It also explains why the preset system exists. The team controls both the model and the pipeline, so they can ship a preset that wires them together correctly out of the box. With a general model like Qwen-VL you'd have to tune the prompt yourself to get structured output.
+
+
+7. Ollama vs Transformers: Granite Docling hallucinates in Ollama
+Ollama: 
+Theorem 1. Let X be a finite set of positive integers and let Y = { y$\_{1}$,...,y$\_{n}$ } . Then there exists an integer n ∈ N such that
+
+$$\mathbb { E } _ { \mathcal { X } } ( x ) & = \sum _ { i = 1 } ^ { n } y _ { i } + \frac { 1 } { n ! } \left [ \sum _ { j = 1 } ^ { n - 2 } y _ { j } \right ] \\ & = \sum _ { i = 1 } ^ { n } y _ { i } + \frac { 1 } { n ! } \left ( \sum _ { j = 1 } ^ { n - 2 } y _ { j } \right )$$
+
+Proof. Let Y be a finite set of positive integers and let X$\_{i}$ ∈ Y . Then there exists an integer n ∈ N such that
+
+$$\mathbb { E } _ { \mathcal { X } } ( x ) & = \sum _ { i = 1 } ^ { n } y _ { i } + \frac { 1 } { n ! } \left [ \sum _ { j = 1 } ^ { n - 2 } y _ { j } \right ] \\ & = \sum _ { i = 1 } ^ { n } y _ { i } + \frac { 1 } { n ! } \left ( \sum _ { j = 1 } ^ { n - 2 } y _ { j } \right )$$
+
+Proof. Let Y be a finite set of positive integers and let X$\_{i}$ ∈ Y . Then there exists an integer n ∈ N such that
+
+$$\mathbb { E } _ { \mathcal { X } } ( x ) & = \sum _ { i = 1 } ^ { n } y _ { i } + \frac { 1 } { n ! } \left [ \sum _ { j = 1 } ^ { n - 2 } y _ { j } \right ] \\ & = \sum _ { i = 1 } ^ { n } y _ { i } + \frac { 1 } { n ! } \left ( \sum _ { j = 1 } ^ { n - 2 } y _ { j } \right )$$
+
+Proof. Let Y be a finite set of positive integers and let X$\_{i}$ ∈ Y . Then there exists an integer n ∈ N such that
+
+$$\mathbb { E } _ { \mathcal { X } } ( x ) & = \sum _ { i = 1 } ^ { n } y _ { i } + \frac { 1 } { n ! } \left [ \sum _ { j = 1 } ^ { n - 2 } y _ { j } \right ] \\ & = \sum _ { i = 1 } ^ { n } y _ { i } + \frac { 1 } { n ! } \left ( \sum _ { j = 1 } ^ { n - 2 } y _ { j } \right )$$
+
+Proof. Let Y be a finite set of positive integers and let X$\_{i}$ ∈ Y . Then there exists an integer n ∈ N such that
+
+$$\mathbb { E } _ { \mathcal { X } } ( x ) & = \sum _ { i = 1 } ^ { n } y _ { i } + \frac { 1 } { n ! } \left [ \sum _ { j = 1 } ^ { n - 2 } y _ { j } \right ] \\ & = \sum _ { i = 1 } ^ { n } y _ { i } + \frac { 1 } { n ! } \left ( \sum _ { j = 1 } ^ { n - 2 } y _ { j } \right )$$
+
+Proof. Let Y be a finite set of positive integers and let X$\_{i}$ ∈ Y . Then there exists an integer n ∈ N such that
+
+$$\mathbb { E } _ { \mathcal { X } } ( x ) & = \sum _ { i = 1 } ^ { n } y _ { i } + \frac { 1 } { n ! } \left [ \sum _ { j = 1 } ^ { n - 2 } y _ { j } \right ] \\ & = \sum _ { i = 1 } ^ { n } y _ { i } + \frac { 1 } { n ! } \left ( \sum _ { j = 1 } ^ { n - 2 } y _ { j } \right )$$
+
+Proof. Let Y be a finite set of positive integers and let X$\_{i}$ ∈ Y . Then there exists an integer n ∈ N such that
+
+$$\mathbb { E } _ { \mathcal { X } } ( x ) & = \sum _ { i = 1 } ^ { n } y _ { i } + \frac { 1 } { n ! } \left [ \sum _ { j = 1 } ^ { n - 2 } y _ { j } \right ] \\ & = \sum _ { i = 1 } ^ { n } y _ { i } + \frac { 1 } { n ! } \left ( \sum _ { j = 1 } ^ { n - 2 } y _ { j } \right )$$
+
+Proof. Let Y be a finite set of positive integers and let X$\_{i}$ ∈ Y . Then there exists an integer n ∈ N such that
+
+$$\mathbb { E } _ { \mathcal { X } } ( x ) & = \sum _ { i = 1 } ^ { n } y _ { i } + \frac { 1 } { n ! } \left [ \sum _ { j = 1 } ^ { n - 2 } y _ { j } \right ] \\ & = \sum _ { i = 1 } ^ { n } y _ { i } + \frac { 1 } { n ! } \left ( \sum _ { j = 1 } ^ { n - 2 } y _ { j } \right )$$
+
+Proof. Let Y be a finite set of positive integers and let X$\_{i}$ ∈ Y . Then there exists an integer n ∈ N such that
+
+$$\mathbb { E } _ { \mathcal { X } } ( x ) & = \sum _ { i = 1 } ^ { n } y _ { i } + \frac { 1 } { n ! } \left [ \sum _ { j = 1 } ^ { n - 2 } y _ { j } \right ] \\ & = \sum _ { i = 1 } ^ { n } y _ { i } + \frac { 1 } { n ! } \left ( \sum _ { j = 1 } ^ { n - 2 } y _ { j } \right )$$
+INFO:docling.models.inference_engines.vlm.api_openai_compatible_engine:API runtime cleaned up
+
+Transformers:
+neebal@neebal:~/Desktop/docling$ uv run docs/examples/1FA*
+[transformers] Model config: pad_token_id must be `None` or an integer within the vocabulary (between 0 and 31999), got 128002. This may result in unexpected behavior.
+Loading weights: 100%|██████████████████████████████████████████████████████████████████████████████████████| 470/470 [00:00<00:00, 7126.16it/s]
+order to compute the TED score. Inference timing results for all experiments were obtained from the same machine on a single core with AMD EPYC 7763 CPU @2.45 GHz.
+
+## 5.1 Hyper Parameter Optimization
+
+We have chosen the PubTabNet data set to perform HPO, since it includes a highly diverse set of tables. Also we report TED scores separately for simple and complex tables (tables with cell spans). Results are presented in Table. 1. It is evident that with OTSL, our model achieves the same TED score and slightly better mAP scores in comparison to HTML. However OTSL yields a 2x speed up in the inference runtime over HTML.
+
+Table 1. HPO performed in OTSL and HTML representation on the same transformer-based TableFormer [9] architecture, trained only on PubTabNet [22]. Effects of reducing the # of layers in encoder and decoder stages of the model show that smaller models trained on OTSL perform better, especially in recognizing complex table structures, and maintain a much higher mAP score than the HTML counterpart.
+
+| #   |   # dec-layers | Language   | TEDs   | TEDs    | TEDs   |   mAP (0.75) |   Inference time (secs) |
+|-----|----------------|------------|--------|---------|--------|--------------|-------------------------|
+|     |              6 | OTSL       | simple | complex | all    |              |                         |
+|     |                | HTML       | 0.965  | 0.934   | 0.955  |         0.88 |                    2.73 |
+|     |                | 0.969      | 0.927  | 0.955   | 0.857  |         5.39 |                         |
+|     |                | OTSL       | 0.938  | 0.904   | 0.927  |        0.853 |                    1.97 |
+|     |                | HTML       | 0.952  | 0.909   | 0.938  |        0.843 |                    3.77 |
+|     |                | OTSL       | 0.923  | 0.897   | 0.915  |        0.859 |                    1.91 |
+|     |                | HTML       | 0.945  | 0.901   | 0.931  |        0.834 |                    3.81 |
+|     |                | OTSL       | 0.952  | 0.92    | 0.942  |        0.857 |                    1.22 |
+|     |                | HTML       | 0.944  | 0.903   | 0.931  |        0.824 |                       2 |
+
+## 5.2 Quantitative Results
+
+We picked the model parameter configuration that produced the best prediction quality (enc=6, dec=6, heads=8) with PubTabNet alone, then independently trained and evaluated it on three publicly available data sets: PubTabNet (395k samples), FinTabNet (113k samples) and PubTables-1M (about 1M samples). Performance results are presented in Table. 2. It is clearly evident that the model trained on OTSL outperforms HTML across the board, keeping high TEDs and mAP scores even on difficult financial tables (FinTabNet) that contain sparse and large tables.
+
+Additionally, the results show that OTSL has an advantage over HTML when applied on a bigger data set like PubTables-1M and achieves significantly improved scores. Finally, OTSL achieves faster inference due to fewer decoding steps which is a result of the reduced sequence representation.
+neebal@neebal:~/Desktop/docling$ 
+
+Observation: Night and day difference. No hallucination, correct content, structured output. The table structure is slightly imperfect (merged header cells confuse it) but the data is all there and accurate.
+
+Reason: This confirms the earlier diagnosis exactly — Ollama's chat template was mangling the prompt format. The model itself is fine. When docling controls the full inference stack via Transformers, GraniteDocling works as advertised.
+
+The pad_token_id warning is harmless — just a config mismatch in the tokenizer that doesn't affect output.
+
+Comparison:
+Setup	Quality	Speed
+GraniteDocling via Ollama	hallucinated	47s
+GraniteDocling via Transformers	correct	(CPU, slow)
+Qwen via Groq	correct	2.35s
+
+Verdict: For prod without a GPU: Groq. For prod with data privacy requirements: Transformers engine on a GPU instance.
+
+
+8. LangChain doc loaders vs Docling: Why use docling when LC provides them anyway?
+The specific problems LangChain's document loaders don't address well:
+
+Table structure — most loaders flatten tables to text. Docling preserves the actual table structure as a first-class object.
+Reading order — multi-column PDFs get garbled by naive text extraction. Docling's layout model handles this explicitly.
+Mixed formats — LangChain has separate loaders per format, each with different quality levels and dependencies. Docling gives you one unified pipeline across PDF, DOCX, PPTX, HTML, images etc. with consistent output.
+OCR integration — LangChain's OCR story is bolted on. Docling's is native to the pipeline.
+DoclingDocument format — structured intermediate representation that carries metadata, hierarchy, bounding boxes. LangChain's Document is just text + metadata dict.
+
+LangChain also now has a DoclingLoader — which uses docling under the hood. That's essentially IBM's answer to the question: they didn't compete with LangChain on orchestration, they made themselves the ingestion layer that LangChain calls.
+
+So the actual answer is: LangChain 1.x solved the orchestration mess, and outsourced the hard document parsing problem to docling.
+
+Claude Q: So modern prod-grade workflows would be built using LC+LG, but use Docling and other specialised libraries for the individual tasks
+
+Claude A: Exactly. That's the architecture pattern emerging in serious AI engineering shops right now:
+
+LangGraph — orchestration, state management, agent loops
+Docling — document ingestion and parsing
+Chroma/Milvus/Weaviate — vector storage
+Rerankers (Cohere, ColBERT) — retrieval quality
+Guardrails/Rebuff — safety and prompt injection defense
+LiteLLM — LLM provider abstraction
+
+Each component is best-in-class for its narrow problem. LangGraph is the glue, not the substance.
+
+The anti-pattern is using LangChain's built-in version of everything — their PDF loader, their vector store wrappers, their retriever — because they're generalist implementations optimized for demos, not production edge cases. They get you to a working prototype fast, which is their actual value. Then you replace components one by one as you hit their ceilings.
+
+Claude A2:
+LC components that are production-grade and remain standard:
+
+LangGraph — the orchestration layer is genuinely good. Used in production at serious shops.
+langchain-core primitives — Document, BaseMessage, RunnableLambda, the LCEL pipe operator. These are thin, well-designed abstractions.
+Provider integrations — ChatOpenAI, ChatAnthropic, ChatBedrockConverse etc. These are thin wrappers around provider SDKs. No reason to bypass them.
+with_structured_output() — solid, uses native tool calling under the hood.
+
+LC components where you hit ceilings in production:
+
+Document loaders — PyPDFLoader, WebBaseLoader etc. are fine for prototypes. For production PDFs with complex layouts, tables, or scanned content, Docling or Unstructured are measurably better.
+Text splitters — RecursiveCharacterTextSplitter is a blunt instrument. Semantic chunking, layout-aware chunking, and document-structure-aware chunking all outperform it for RAG quality.
+Vector store wrappers — the abstraction is shallow as you've already seen. Fine for CRUD, breaks down for advanced filtering and hybrid search.
+Built-in retrievers — MultiQueryRetriever, ContextualCompressionRetriever are solid concepts but fixed implementations. Production systems usually need tuned reranking (Cohere, ColBERT) for precision.
+Memory — LC's built-in memory is largely deprecated. LangGraph's state management replaced it properly.
+
+
+9. granite_docling over transformers takes 89s, granite_vision over transformers takes 925s and nanonets_ocr2 over transformers takes 1090s. 
+
+Speed vs quality tradeoff on CPU:
+
+Model	        Time	Table quality
+GraniteDocling	89s	    Good
+Granite Vision	900s	Perfect
+Nanonets OCR2	1060s	Excellent
+
+Practical conclusion:
+
+For CPU inference, GraniteDocling at 89s is the only viable option — 900s and 1060s per page is unusable in any real pipeline. The time gap between GraniteDocling and the others closes significantly on a GPU where all three would run in seconds.
+
+Nanonets OCR2's output is arguably the richest — it preserved semantic emphasis that the others dropped — but at 12x the runtime of GraniteDocling on CPU, that's not a worthwhile trade. However, it is the top choice when GPUs are available. 
