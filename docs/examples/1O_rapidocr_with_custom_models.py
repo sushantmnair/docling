@@ -41,15 +41,9 @@ def main():
     download_path = snapshot_download(repo_id="RapidAI/RapidOCR")
 
     # Setup RapidOcrOptions for English detection
-    det_model_path = os.path.join(
-        download_path, "onnx", "PP-OCRv5", "det", "ch_PP-OCRv5_server_det.onnx"
-    )
-    rec_model_path = os.path.join(
-        download_path, "onnx", "PP-OCRv5", "rec", "ch_PP-OCRv5_rec_server_infer.onnx"
-    )
-    cls_model_path = os.path.join(
-        download_path, "onnx", "PP-OCRv4", "cls", "ch_ppocr_mobile_v2.0_cls_infer.onnx"
-    )
+    det_model_path = os.path.join(download_path, "onnx/PP-OCRv5/det/ch_PP-OCRv5_det_server.onnx")
+    rec_model_path = os.path.join(download_path, "onnx/PP-OCRv5/rec/en_PP-OCRv5_rec_mobile.onnx")
+    cls_model_path = os.path.join(download_path, "onnx/PP-OCRv4/cls/ch_ppocr_mobile_v2.0_cls_mobile.onnx")
     ocr_options = RapidOcrOptions(
         det_model_path=det_model_path,
         rec_model_path=rec_model_path,

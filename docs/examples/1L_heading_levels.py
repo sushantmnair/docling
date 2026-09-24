@@ -38,7 +38,7 @@ from docling.document_converter import DocumentConverter, PdfFormatOption
 
 
 def main():
-    input_doc_path = Path("tests/data/pdf/sources/2203.01017v2.pdf")
+    input_doc_path = Path("../../tests/data/pdf/sources/2203.01017v2.pdf")
 
     pipeline_options = PdfPipelineOptions()
     pipeline_options.do_ocr = False

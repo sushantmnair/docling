@@ -1,0 +1,3018 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "epub_purvis_poetry",
+  "origin": {
+    "mimetype": "application/epub+zip",
+    "binary_hash": 1922125154971968754,
+    "filename": "epub_purvis_poetry.epub"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/5"
+      },
+      {
+        "$ref": "#/texts/123"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/texts/0"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/1"
+        },
+        {
+          "$ref": "#/texts/2"
+        },
+        {
+          "$ref": "#/texts/3"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/1",
+      "parent": {
+        "$ref": "#/texts/4"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/6"
+        },
+        {
+          "$ref": "#/texts/7"
+        },
+        {
+          "$ref": "#/texts/8"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/2",
+      "parent": {
+        "$ref": "#/texts/4"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/9"
+        },
+        {
+          "$ref": "#/texts/10"
+        },
+        {
+          "$ref": "#/texts/11"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/3",
+      "parent": {
+        "$ref": "#/texts/4"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/12"
+        },
+        {
+          "$ref": "#/texts/13"
+        },
+        {
+          "$ref": "#/texts/14"
+        },
+        {
+          "$ref": "#/texts/15"
+        },
+        {
+          "$ref": "#/texts/16"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/4",
+      "parent": {
+        "$ref": "#/texts/4"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/17"
+        },
+        {
+          "$ref": "#/texts/18"
+        },
+        {
+          "$ref": "#/texts/19"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/5",
+      "parent": {
+        "$ref": "#/texts/25"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/29"
+        },
+        {
+          "$ref": "#/texts/30"
+        },
+        {
+          "$ref": "#/texts/31"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/6",
+      "parent": {
+        "$ref": "#/texts/33"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/40"
+        },
+        {
+          "$ref": "#/texts/41"
+        },
+        {
+          "$ref": "#/texts/42"
+        },
+        {
+          "$ref": "#/texts/43"
+        },
+        {
+          "$ref": "#/texts/44"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/7",
+      "parent": {
+        "$ref": "#/texts/50"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/51"
+        },
+        {
+          "$ref": "#/texts/52"
+        },
+        {
+          "$ref": "#/texts/53"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/8",
+      "parent": {
+        "$ref": "#/texts/60"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/63"
+        },
+        {
+          "$ref": "#/texts/64"
+        },
+        {
+          "$ref": "#/texts/65"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/9",
+      "parent": {
+        "$ref": "#/texts/89"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/90"
+        },
+        {
+          "$ref": "#/texts/91"
+        },
+        {
+          "$ref": "#/texts/92"
+        },
+        {
+          "$ref": "#/texts/93"
+        },
+        {
+          "$ref": "#/texts/94"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/10",
+      "parent": {
+        "$ref": "#/texts/104"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/110"
+        },
+        {
+          "$ref": "#/texts/111"
+        },
+        {
+          "$ref": "#/texts/112"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/11",
+      "parent": {
+        "$ref": "#/texts/122"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/124"
+        },
+        {
+          "$ref": "#/texts/125"
+        },
+        {
+          "$ref": "#/texts/126"
+        },
+        {
+          "$ref": "#/texts/127"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/12",
+      "parent": {
+        "$ref": "#/texts/122"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/128"
+        },
+        {
+          "$ref": "#/texts/129"
+        },
+        {
+          "$ref": "#/texts/130"
+        },
+        {
+          "$ref": "#/texts/131"
+        },
+        {
+          "$ref": "#/texts/132"
+        },
+        {
+          "$ref": "#/texts/133"
+        },
+        {
+          "$ref": "#/texts/134"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/13",
+      "parent": {
+        "$ref": "#/texts/122"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/135"
+        },
+        {
+          "$ref": "#/texts/136"
+        },
+        {
+          "$ref": "#/texts/137"
+        },
+        {
+          "$ref": "#/texts/138"
+        },
+        {
+          "$ref": "#/texts/139"
+        },
+        {
+          "$ref": "#/texts/140"
+        },
+        {
+          "$ref": "#/texts/141"
+        },
+        {
+          "$ref": "#/texts/142"
+        },
+        {
+          "$ref": "#/texts/143"
+        },
+        {
+          "$ref": "#/texts/144"
+        },
+        {
+          "$ref": "#/texts/145"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/14",
+      "parent": {
+        "$ref": "#/texts/122"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/146"
+        },
+        {
+          "$ref": "#/texts/147"
+        },
+        {
+          "$ref": "#/texts/148"
+        },
+        {
+          "$ref": "#/texts/149"
+        },
+        {
+          "$ref": "#/texts/150"
+        },
+        {
+          "$ref": "#/texts/151"
+        },
+        {
+          "$ref": "#/texts/152"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/15",
+      "parent": {
+        "$ref": "#/texts/122"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/153"
+        },
+        {
+          "$ref": "#/texts/154"
+        },
+        {
+          "$ref": "#/texts/155"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/16",
+      "parent": {
+        "$ref": "#/texts/156"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/158"
+        },
+        {
+          "$ref": "#/texts/159"
+        },
+        {
+          "$ref": "#/texts/160"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/17",
+      "parent": {
+        "$ref": "#/texts/156"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/162"
+        },
+        {
+          "$ref": "#/texts/163"
+        },
+        {
+          "$ref": "#/texts/164"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/groups/0"
+        },
+        {
+          "$ref": "#/pictures/0"
+        },
+        {
+          "$ref": "#/texts/4"
+        },
+        {
+          "$ref": "#/texts/20"
+        },
+        {
+          "$ref": "#/texts/25"
+        },
+        {
+          "$ref": "#/texts/33"
+        },
+        {
+          "$ref": "#/texts/45"
+        },
+        {
+          "$ref": "#/texts/50"
+        },
+        {
+          "$ref": "#/texts/54"
+        },
+        {
+          "$ref": "#/texts/60"
+        },
+        {
+          "$ref": "#/texts/69"
+        },
+        {
+          "$ref": "#/texts/75"
+        },
+        {
+          "$ref": "#/texts/82"
+        },
+        {
+          "$ref": "#/texts/89"
+        },
+        {
+          "$ref": "#/texts/95"
+        },
+        {
+          "$ref": "#/texts/100"
+        },
+        {
+          "$ref": "#/texts/104"
+        },
+        {
+          "$ref": "#/texts/116"
+        },
+        {
+          "$ref": "#/texts/122"
+        },
+        {
+          "$ref": "#/texts/156"
+        }
+      ],
+      "content_layer": "body",
+      "label": "title",
+      "prov": [],
+      "orig": "Poetry",
+      "text": "Poetry"
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "By",
+      "text": "By"
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Sarah Louisa Forten Purvis",
+      "text": "Sarah Louisa Forten Purvis",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ".",
+      "text": "."
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/texts/0"
+      },
+      "children": [
+        {
+          "$ref": "#/pictures/1"
+        },
+        {
+          "$ref": "#/groups/1"
+        },
+        {
+          "$ref": "#/groups/2"
+        },
+        {
+          "$ref": "#/groups/3"
+        },
+        {
+          "$ref": "#/groups/4"
+        }
+      ],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [],
+      "orig": "Imprint",
+      "text": "Imprint",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [],
+      "orig": "The Standard Ebooks logo.",
+      "text": "The Standard Ebooks logo."
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "This ebook is the product of many hours of hard work by volunteers for",
+      "text": "This ebook is the product of many hours of hard work by volunteers for"
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Standard Ebooks",
+      "text": "Standard Ebooks",
+      "hyperlink": "https://standardebooks.org/"
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ", and builds on the hard work of other literature lovers made possible by the public domain.",
+      "text": ", and builds on the hard work of other literature lovers made possible by the public domain."
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "This particular ebook is based on digital scans from the",
+      "text": "This particular ebook is based on digital scans from the"
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Internet Archive",
+      "text": "Internet Archive",
+      "hyperlink": "https://standardebooks.org/ebooks/sarah-louisa-forten-purvis/poetry#page-scans"
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ".",
+      "text": "."
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "The source text and artwork in this ebook are believed to be in the United States public domain; that is, they are believed to be free of copyright restrictions in the United States. They may still be copyrighted in other countries, so users located outside of the United States must check their local laws before using this ebook. The creators of, and contributors to, this ebook dedicate their contributions to the worldwide public domain via the terms in the",
+      "text": "The source text and artwork in this ebook are believed to be in the United States public domain; that is, they are believed to be free of copyright restrictions in the United States. They may still be copyrighted in other countries, so users located outside of the United States must check their local laws before using this ebook. The creators of, and contributors to, this ebook dedicate their contributions to the worldwide public domain via the terms in the"
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "CC0 1.0 Universal Public Domain Dedication",
+      "text": "CC0 1.0 Universal Public Domain Dedication",
+      "hyperlink": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ". For full license information, see the",
+      "text": ". For full license information, see the"
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Uncopyright",
+      "text": "Uncopyright",
+      "hyperlink": "/tmp/docling_epub_fosfe_74/uncopyright.xhtml"
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "at the end of this ebook.",
+      "text": "at the end of this ebook."
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Standard Ebooks is a volunteer-driven project that produces ebook editions of public domain literature using modern typography, technology, and editorial standards, and distributes them free of cost. You can download this and other ebooks carefully produced for true book lovers at",
+      "text": "Standard Ebooks is a volunteer-driven project that produces ebook editions of public domain literature using modern typography, technology, and editorial standards, and distributes them free of cost. You can download this and other ebooks carefully produced for true book lovers at"
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "standardebooks.org",
+      "text": "standardebooks.org",
+      "hyperlink": "https://standardebooks.org/"
+    },
+    {
+      "self_ref": "#/texts/19",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ".",
+      "text": "."
+    },
+    {
+      "self_ref": "#/texts/20",
+      "parent": {
+        "$ref": "#/texts/0"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/21"
+        },
+        {
+          "$ref": "#/texts/22"
+        },
+        {
+          "$ref": "#/texts/23"
+        },
+        {
+          "$ref": "#/texts/24"
+        }
+      ],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [],
+      "orig": "The Grave of the Slave",
+      "text": "The Grave of the Slave",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/21",
+      "parent": {
+        "$ref": "#/texts/20"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "The cold storms of winter shall chill him no more,\nHis woes and his sorrows, his pains are all o'er;\nThe sod of the valley now covers his form,\nHe is safe in his last home, he feels not the storm.",
+      "text": "The cold storms of winter shall chill him no more,\nHis woes and his sorrows, his pains are all o'er;\nThe sod of the valley now covers his form,\nHe is safe in his last home, he feels not the storm."
+    },
+    {
+      "self_ref": "#/texts/22",
+      "parent": {
+        "$ref": "#/texts/20"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "The poor slave is laid all unheeded and lone,\nWhere the rich and the poor find a permanent home;\nNot his master can rouse him with voice of command;\nHe knows not, he hears not, his cruel demand.",
+      "text": "The poor slave is laid all unheeded and lone,\nWhere the rich and the poor find a permanent home;\nNot his master can rouse him with voice of command;\nHe knows not, he hears not, his cruel demand."
+    },
+    {
+      "self_ref": "#/texts/23",
+      "parent": {
+        "$ref": "#/texts/20"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Not a tear, not a sigh to embalm his cold tomb,\nNo friend to lament him, no child to bemoan;\nNot a stone marks the place, where he peacefully lies,\nThe earth for his pillow, his curtain the skies.",
+      "text": "Not a tear, not a sigh to embalm his cold tomb,\nNo friend to lament him, no child to bemoan;\nNot a stone marks the place, where he peacefully lies,\nThe earth for his pillow, his curtain the skies."
+    },
+    {
+      "self_ref": "#/texts/24",
+      "parent": {
+        "$ref": "#/texts/20"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Poor slave! shall we sorrow that death was thy friend,\nThe last, and the kindest, that heaven could send?\nThe grave to the weary is welcomed and blest;\nAnd death, to the captive, is freedom and rest.",
+      "text": "Poor slave! shall we sorrow that death was thy friend,\nThe last, and the kindest, that heaven could send?\nThe grave to the weary is welcomed and blest;\nAnd death, to the captive, is freedom and rest."
+    },
+    {
+      "self_ref": "#/texts/25",
+      "parent": {
+        "$ref": "#/texts/0"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/26"
+        },
+        {
+          "$ref": "#/texts/27"
+        },
+        {
+          "$ref": "#/texts/28"
+        },
+        {
+          "$ref": "#/groups/5"
+        },
+        {
+          "$ref": "#/texts/32"
+        }
+      ],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [],
+      "orig": "The Slave Girl\u2019s Address to Her Mother",
+      "text": "The Slave Girl's Address to Her Mother",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/26",
+      "parent": {
+        "$ref": "#/texts/25"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Oh! mother, weep not, though our lot be hard,\nAnd we are helpless-God will be our guard:\nFor He our heavenly guardian doth not sleep;\nHe watches o'er us-mother, do not weep.",
+      "text": "Oh! mother, weep not, though our lot be hard,\nAnd we are helpless-God will be our guard:\nFor He our heavenly guardian doth not sleep;\nHe watches o'er us-mother, do not weep."
+    },
+    {
+      "self_ref": "#/texts/27",
+      "parent": {
+        "$ref": "#/texts/25"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "And grieve not for that dear loved home no more;\nOur sufferings and our wrongs, ah! why deplore?\nFor though we feel the stern oppressor's rod,\nYet he must yield, as well as we, to God.",
+      "text": "And grieve not for that dear loved home no more;\nOur sufferings and our wrongs, ah! why deplore?\nFor though we feel the stern oppressor's rod,\nYet he must yield, as well as we, to God."
+    },
+    {
+      "self_ref": "#/texts/28",
+      "parent": {
+        "$ref": "#/texts/25"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Torn from our home, our kindred and our friends,\nAnd in a stranger's land our days to end,\nNo heart feels for the poor, the bleeding slave;\nNo arm is stretched to rescue, and to save.",
+      "text": "Torn from our home, our kindred and our friends,\nAnd in a stranger's land our days to end,\nNo heart feels for the poor, the bleeding slave;\nNo arm is stretched to rescue, and to save."
+    },
+    {
+      "self_ref": "#/texts/29",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Oh! ye who boast of Freedom's sacred claims,\nDo ye not blush to see our galling chains;\nTo hear that sounding word-\"that all are free\"-\nWhen thousands groan in hopeless",
+      "text": "Oh! ye who boast of Freedom's sacred claims,\nDo ye not blush to see our galling chains;\nTo hear that sounding word-\"that all are free\"-\nWhen thousands groan in hopeless"
+    },
+    {
+      "self_ref": "#/texts/30",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "slavery",
+      "text": "slavery",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/31",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "?",
+      "text": "?"
+    },
+    {
+      "self_ref": "#/texts/32",
+      "parent": {
+        "$ref": "#/texts/25"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Upon your land it is a cruel stain-\nFreedom, what art thou?-nothing but a name.\nNo more, no more! Oh God, this cannot be;\nThou to thy children's aid wilt surely flee:\nIn thine own time deliverance thou wilt give,\nAnd bid us rise from slavery, and live.",
+      "text": "Upon your land it is a cruel stain-\nFreedom, what art thou?-nothing but a name.\nNo more, no more! Oh God, this cannot be;\nThou to thy children's aid wilt surely flee:\nIn thine own time deliverance thou wilt give,\nAnd bid us rise from slavery, and live."
+    },
+    {
+      "self_ref": "#/texts/33",
+      "parent": {
+        "$ref": "#/texts/0"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/34"
+        },
+        {
+          "$ref": "#/texts/35"
+        },
+        {
+          "$ref": "#/texts/36"
+        },
+        {
+          "$ref": "#/texts/37"
+        },
+        {
+          "$ref": "#/texts/38"
+        },
+        {
+          "$ref": "#/texts/39"
+        },
+        {
+          "$ref": "#/groups/6"
+        }
+      ],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [],
+      "orig": "Past Joys",
+      "text": "Past Joys",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/34",
+      "parent": {
+        "$ref": "#/texts/33"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "The friends we've loved, the home we've left,\nWill ofttimes claim a tear;\nAnd though of these we are bereft,\nStill memory makes them dear.",
+      "text": "The friends we've loved, the home we've left,\nWill ofttimes claim a tear;\nAnd though of these we are bereft,\nStill memory makes them dear."
+    },
+    {
+      "self_ref": "#/texts/35",
+      "parent": {
+        "$ref": "#/texts/33"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "And deep we feel each trifling ill,\nEach sorrow of the soul:\nBut care we for the painful thrill,\nThat o'er some breasts doth roll?",
+      "text": "And deep we feel each trifling ill,\nEach sorrow of the soul:\nBut care we for the painful thrill,\nThat o'er some breasts doth roll?"
+    },
+    {
+      "self_ref": "#/texts/36",
+      "parent": {
+        "$ref": "#/texts/33"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Poor Afric's son-ah! he must feel\nHow hard it is to part\nFrom all he lov'd-from all that life\nHad twined around his heart.",
+      "text": "Poor Afric's son-ah! he must feel\nHow hard it is to part\nFrom all he lov'd-from all that life\nHad twined around his heart."
+    },
+    {
+      "self_ref": "#/texts/37",
+      "parent": {
+        "$ref": "#/texts/33"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "His is a sorrow deeper far,\nThan all that we can show;\nHis is a lasting grief, o'er which\nNo healing balm can flow.",
+      "text": "His is a sorrow deeper far,\nThan all that we can show;\nHis is a lasting grief, o'er which\nNo healing balm can flow."
+    },
+    {
+      "self_ref": "#/texts/38",
+      "parent": {
+        "$ref": "#/texts/33"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "The mother, wife, or child he loved,\nHe ne'er shall see again;\nTo him they're lost-ay, dead indeed:\nWhat for him doth remain?",
+      "text": "The mother, wife, or child he loved,\nHe ne'er shall see again;\nTo him they're lost-ay, dead indeed:\nWhat for him doth remain?"
+    },
+    {
+      "self_ref": "#/texts/39",
+      "parent": {
+        "$ref": "#/texts/33"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "A feeling of deep wretchedness\nComes o'er his troubled soul;\nThe thoughts of home-of other days,\nIn painful visions roll.",
+      "text": "A feeling of deep wretchedness\nComes o'er his troubled soul;\nThe thoughts of home-of other days,\nIn painful visions roll."
+    },
+    {
+      "self_ref": "#/texts/40",
+      "parent": {
+        "$ref": "#/groups/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "His home-ah! that lov'd name recalls\nAll that was dear to him;\nBut",
+      "text": "His home-ah! that lov'd name recalls\nAll that was dear to him;\nBut"
+    },
+    {
+      "self_ref": "#/texts/41",
+      "parent": {
+        "$ref": "#/groups/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "these",
+      "text": "these",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/42",
+      "parent": {
+        "$ref": "#/groups/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "were scenes he'll know no more-\nHe only",
+      "text": "were scenes he'll know no more-\nHe only"
+    },
+    {
+      "self_ref": "#/texts/43",
+      "parent": {
+        "$ref": "#/groups/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "feels",
+      "text": "feels",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/44",
+      "parent": {
+        "$ref": "#/groups/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "they've been.",
+      "text": "they've been."
+    },
+    {
+      "self_ref": "#/texts/45",
+      "parent": {
+        "$ref": "#/texts/0"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/46"
+        },
+        {
+          "$ref": "#/texts/47"
+        },
+        {
+          "$ref": "#/texts/48"
+        },
+        {
+          "$ref": "#/texts/49"
+        }
+      ],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [],
+      "orig": "Prayer",
+      "text": "Prayer",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/46",
+      "parent": {
+        "$ref": "#/texts/45"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "This sacred right none are denied,\nWhich makes the soul to Christ allied;\nMan bends the heart and bows the knee,\nAnd knows in prayer that he is free.",
+      "text": "This sacred right none are denied,\nWhich makes the soul to Christ allied;\nMan bends the heart and bows the knee,\nAnd knows in prayer that he is free."
+    },
+    {
+      "self_ref": "#/texts/47",
+      "parent": {
+        "$ref": "#/texts/45"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Yes, free to ask of Him, whate'er\nThe fainting heart alone can cheer;\nTo worship at that holy shrine,\nWhere beams thy Spirit, Lord, divine.",
+      "text": "Yes, free to ask of Him, whate'er\nThe fainting heart alone can cheer;\nTo worship at that holy shrine,\nWhere beams thy Spirit, Lord, divine."
+    },
+    {
+      "self_ref": "#/texts/48",
+      "parent": {
+        "$ref": "#/texts/45"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "And Afric's children they are free,\nTo breathe their vows, their prayers to Thee;\nWith thought of future joy and gain,\nThe slave forgets his grief and pain;",
+      "text": "And Afric's children they are free,\nTo breathe their vows, their prayers to Thee;\nWith thought of future joy and gain,\nThe slave forgets his grief and pain;"
+    },
+    {
+      "self_ref": "#/texts/49",
+      "parent": {
+        "$ref": "#/texts/45"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Forgets awhile his slavish fear;\nForgets-that fetters bind him here;\nAnd in that sweet communion rest\nHis hopes, his fears-for he is blest.",
+      "text": "Forgets awhile his slavish fear;\nForgets-that fetters bind him here;\nAnd in that sweet communion rest\nHis hopes, his fears-for he is blest."
+    },
+    {
+      "self_ref": "#/texts/50",
+      "parent": {
+        "$ref": "#/texts/0"
+      },
+      "children": [
+        {
+          "$ref": "#/groups/7"
+        }
+      ],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [],
+      "orig": "The Slave",
+      "text": "The Slave",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/51",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Our sires who once in freedom's cause,\nTheir boasted freedom sought and won,\nFor deeds of glory gained applause,\nWhen patriot feelings led them on.\nAnd can their sons now speak with pride,\nOf rights for which they bled and died-\nOr while the captive is oppressed,\nThink of the wrongs they once redress'd?\nOh, surely they have quite forgot,\nThat bondage once had been their lot;\nThe sweets of freedom now they know,\nThey care not for the captive's woe.\nThe poor wronged slave can bear no part\nIn feelings dearest to his heart;\nHe cannot speak on freedom's side,\nNor dare he own a freeman's pride,\nHis soul is dark, ay dark as night,\nO'er which is shed no gleam of light;\nA cloud of error, doubt and fear,\nO'er him is ever hovering near;\nAnd sad and hard his lot must be,\nTo know that he can ne'er be free;\nTo feel that",
+      "text": "Our sires who once in freedom's cause,\nTheir boasted freedom sought and won,\nFor deeds of glory gained applause,\nWhen patriot feelings led them on.\nAnd can their sons now speak with pride,\nOf rights for which they bled and died-\nOr while the captive is oppressed,\nThink of the wrongs they once redress'd?\nOh, surely they have quite forgot,\nThat bondage once had been their lot;\nThe sweets of freedom now they know,\nThey care not for the captive's woe.\nThe poor wronged slave can bear no part\nIn feelings dearest to his heart;\nHe cannot speak on freedom's side,\nNor dare he own a freeman's pride,\nHis soul is dark, ay dark as night,\nO'er which is shed no gleam of light;\nA cloud of error, doubt and fear,\nO'er him is ever hovering near;\nAnd sad and hard his lot must be,\nTo know that he can ne'er be free;\nTo feel that"
+    },
+    {
+      "self_ref": "#/texts/52",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "his",
+      "text": "his",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/53",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "is doomed to be\nA life, and death, of slavery.\nBut will not justice soon arise,\nAnd plead the cause of the despised?\nFor oh! my country, must it be,\nThat they still find a foe in thee?",
+      "text": "is doomed to be\nA life, and death, of slavery.\nBut will not justice soon arise,\nAnd plead the cause of the despised?\nFor oh! my country, must it be,\nThat they still find a foe in thee?"
+    },
+    {
+      "self_ref": "#/texts/54",
+      "parent": {
+        "$ref": "#/texts/0"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/55"
+        },
+        {
+          "$ref": "#/texts/56"
+        },
+        {
+          "$ref": "#/texts/57"
+        },
+        {
+          "$ref": "#/texts/58"
+        },
+        {
+          "$ref": "#/texts/59"
+        }
+      ],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [],
+      "orig": "The Farewell",
+      "text": "The Farewell",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/55",
+      "parent": {
+        "$ref": "#/texts/54"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Farewell!-but thou wilt soon forget\nThe stranger thou hast seen,\nAnd in the gay and busy world,\nForget that I have been.",
+      "text": "Farewell!-but thou wilt soon forget\nThe stranger thou hast seen,\nAnd in the gay and busy world,\nForget that I have been."
+    },
+    {
+      "self_ref": "#/texts/56",
+      "parent": {
+        "$ref": "#/texts/54"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "And thought of me will scarce intrude,\nWhen other forms are nigh;\nWho, decked in beauty's bright array,\nShall pass before thine eye.",
+      "text": "And thought of me will scarce intrude,\nWhen other forms are nigh;\nWho, decked in beauty's bright array,\nShall pass before thine eye."
+    },
+    {
+      "self_ref": "#/texts/57",
+      "parent": {
+        "$ref": "#/texts/54"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Another's lips will charm thee then,\nAnother's voice will praise;\nThou wilt forget we e'er have met\nIn past and happy days.",
+      "text": "Another's lips will charm thee then,\nAnother's voice will praise;\nThou wilt forget we e'er have met\nIn past and happy days."
+    },
+    {
+      "self_ref": "#/texts/58",
+      "parent": {
+        "$ref": "#/texts/54"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "And thou wilt scarcely deign to think\nOf friendship's early dream,\nOr cast one glance, in after years,\nOn this poor offering.",
+      "text": "And thou wilt scarcely deign to think\nOf friendship's early dream,\nOr cast one glance, in after years,\nOn this poor offering."
+    },
+    {
+      "self_ref": "#/texts/59",
+      "parent": {
+        "$ref": "#/texts/54"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Farewell-farewell!-'twere better far\nThat we had never met,\nThan meeting one brief moment here,\nTo part-and then forget.",
+      "text": "Farewell-farewell!-'twere better far\nThat we had never met,\nThan meeting one brief moment here,\nTo part-and then forget."
+    },
+    {
+      "self_ref": "#/texts/60",
+      "parent": {
+        "$ref": "#/texts/0"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/61"
+        },
+        {
+          "$ref": "#/texts/62"
+        },
+        {
+          "$ref": "#/groups/8"
+        },
+        {
+          "$ref": "#/texts/66"
+        },
+        {
+          "$ref": "#/texts/67"
+        },
+        {
+          "$ref": "#/texts/68"
+        }
+      ],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [],
+      "orig": "A Mother\u2019s Grief",
+      "text": "A Mother's Grief",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/61",
+      "parent": {
+        "$ref": "#/texts/60"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "There lies the sole remaining hope\nOf all my coming years;\nThe treasure of my widow'd heart,\nThe tie that bound me here.",
+      "text": "There lies the sole remaining hope\nOf all my coming years;\nThe treasure of my widow'd heart,\nThe tie that bound me here."
+    },
+    {
+      "self_ref": "#/texts/62",
+      "parent": {
+        "$ref": "#/texts/60"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "He was the last-the loveliest,\nAnd can you blame my grief,\nOr chide the falling tears which give\nThis bursting heart relief?",
+      "text": "He was the last-the loveliest,\nAnd can you blame my grief,\nOr chide the falling tears which give\nThis bursting heart relief?"
+    },
+    {
+      "self_ref": "#/texts/63",
+      "parent": {
+        "$ref": "#/groups/8"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "There's nothing left for me to love\nThis earth holds nothing dear,\nSince",
+      "text": "There's nothing left for me to love\nThis earth holds nothing dear,\nSince"
+    },
+    {
+      "self_ref": "#/texts/64",
+      "parent": {
+        "$ref": "#/groups/8"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "he",
+      "text": "he",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/65",
+      "parent": {
+        "$ref": "#/groups/8"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ", my sweet-my gentle one,\nIs now no longer here.",
+      "text": ", my sweet-my gentle one,\nIs now no longer here."
+    },
+    {
+      "self_ref": "#/texts/66",
+      "parent": {
+        "$ref": "#/texts/60"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "My poor fond heart had counted on\nSuch bliss, in future hours!\nAnd I had dreamed his coming days\nHere strewed with fairy flowers!",
+      "text": "My poor fond heart had counted on\nSuch bliss, in future hours!\nAnd I had dreamed his coming days\nHere strewed with fairy flowers!"
+    },
+    {
+      "self_ref": "#/texts/67",
+      "parent": {
+        "$ref": "#/texts/60"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Perchance 'twas wrong to love him thus,\nAnd I have been chastised-\nFor He who gave him to my trust,\nHath called him to the skies.",
+      "text": "Perchance 'twas wrong to love him thus,\nAnd I have been chastised-\nFor He who gave him to my trust,\nHath called him to the skies."
+    },
+    {
+      "self_ref": "#/texts/68",
+      "parent": {
+        "$ref": "#/texts/60"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "He was too dear-oh! far too dear,\nThe idol of my soul-\nThen blame me not-this burst of grief\nI cannot now control.",
+      "text": "He was too dear-oh! far too dear,\nThe idol of my soul-\nThen blame me not-this burst of grief\nI cannot now control."
+    },
+    {
+      "self_ref": "#/texts/69",
+      "parent": {
+        "$ref": "#/texts/0"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/70"
+        },
+        {
+          "$ref": "#/texts/71"
+        },
+        {
+          "$ref": "#/texts/72"
+        },
+        {
+          "$ref": "#/texts/73"
+        },
+        {
+          "$ref": "#/texts/74"
+        }
+      ],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [],
+      "orig": "To the Hibernia",
+      "text": "To the Hibernia",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      },
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/70",
+      "parent": {
+        "$ref": "#/texts/69"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "O, speed thee! speed thee! gallant bark,\nAcross the bounding wave;\nThou bearest to old Britain's shores,\nThe Champion of the slave.",
+      "text": "O, speed thee! speed thee! gallant bark,\nAcross the bounding wave;\nThou bearest to old Britain's shores,\nThe Champion of the slave."
+    },
+    {
+      "self_ref": "#/texts/71",
+      "parent": {
+        "$ref": "#/texts/69"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Propitious breezes waft thee on,\nSafe o'er Atlantic's sea;\nFor many a heart with fervor sends\nA benizon to thee.",
+      "text": "Propitious breezes waft thee on,\nSafe o'er Atlantic's sea;\nFor many a heart with fervor sends\nA benizon to thee."
+    },
+    {
+      "self_ref": "#/texts/72",
+      "parent": {
+        "$ref": "#/texts/69"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "And he who fears not to commit\nHis body to thy care,\nFears not to brave the winds and waves,\nKnowing that God is there.",
+      "text": "And he who fears not to commit\nHis body to thy care,\nFears not to brave the winds and waves,\nKnowing that God is there."
+    },
+    {
+      "self_ref": "#/texts/73",
+      "parent": {
+        "$ref": "#/texts/69"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "He goes to raise the standard high,\nAnd freedom's flag unfurl,\nAnd to proclaim the rallying cry\nOf freedom to the world.",
+      "text": "He goes to raise the standard high,\nAnd freedom's flag unfurl,\nAnd to proclaim the rallying cry\nOf freedom to the world."
+    },
+    {
+      "self_ref": "#/texts/74",
+      "parent": {
+        "$ref": "#/texts/69"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Then swift and steady be thy flight,\nAcross the briny wave;\nAnd safely bear, O noble bark,\nThe Champion of the slave.",
+      "text": "Then swift and steady be thy flight,\nAcross the briny wave;\nAnd safely bear, O noble bark,\nThe Champion of the slave."
+    },
+    {
+      "self_ref": "#/texts/75",
+      "parent": {
+        "$ref": "#/texts/0"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/76"
+        },
+        {
+          "$ref": "#/texts/77"
+        },
+        {
+          "$ref": "#/texts/78"
+        },
+        {
+          "$ref": "#/texts/79"
+        },
+        {
+          "$ref": "#/texts/80"
+        },
+        {
+          "$ref": "#/texts/81"
+        }
+      ],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [],
+      "orig": "Life",
+      "text": "Life",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/76",
+      "parent": {
+        "$ref": "#/texts/75"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "To see our pathway strewn with flowers,\nWhile 'neath their sunny hue,\nWe fear that many a rankling care\nLies hidden from our view;",
+      "text": "To see our pathway strewn with flowers,\nWhile 'neath their sunny hue,\nWe fear that many a rankling care\nLies hidden from our view;"
+    },
+    {
+      "self_ref": "#/texts/77",
+      "parent": {
+        "$ref": "#/texts/75"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "To cull the flowers, to love their bloom,\nA season to enjoy;\nTo mark the blast that rudely comes\nTheir beauties to destroy:-",
+      "text": "To cull the flowers, to love their bloom,\nA season to enjoy;\nTo mark the blast that rudely comes\nTheir beauties to destroy:-"
+    },
+    {
+      "self_ref": "#/texts/78",
+      "parent": {
+        "$ref": "#/texts/75"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Such is our life. How full of change!\nHow much of hope or fears!\nScarce on the cheek is seen the smile,\nEre it is lost in tears.",
+      "text": "Such is our life. How full of change!\nHow much of hope or fears!\nScarce on the cheek is seen the smile,\nEre it is lost in tears."
+    },
+    {
+      "self_ref": "#/texts/79",
+      "parent": {
+        "$ref": "#/texts/75"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "To see the cherished things of earth,\nOn which we placed the heart,\nFade, one by one, before our eyes,\nAnd silently depart;-",
+      "text": "To see the cherished things of earth,\nOn which we placed the heart,\nFade, one by one, before our eyes,\nAnd silently depart;-"
+    },
+    {
+      "self_ref": "#/texts/80",
+      "parent": {
+        "$ref": "#/texts/75"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "This is our life-and who can tell\nWhat future hours may bring?\nWhat hopes will cheer the panting heart,\nWhile close to earth we cling?",
+      "text": "This is our life-and who can tell\nWhat future hours may bring?\nWhat hopes will cheer the panting heart,\nWhile close to earth we cling?"
+    },
+    {
+      "self_ref": "#/texts/81",
+      "parent": {
+        "$ref": "#/texts/75"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "The morning of our days are bright,\nAnd could the vision last-\nBut 'tis forbid-oh! changeful life,\nHow soon the dream is past!",
+      "text": "The morning of our days are bright,\nAnd could the vision last-\nBut 'tis forbid-oh! changeful life,\nHow soon the dream is past!"
+    },
+    {
+      "self_ref": "#/texts/82",
+      "parent": {
+        "$ref": "#/texts/0"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/83"
+        },
+        {
+          "$ref": "#/texts/84"
+        },
+        {
+          "$ref": "#/texts/85"
+        },
+        {
+          "$ref": "#/texts/86"
+        },
+        {
+          "$ref": "#/texts/87"
+        },
+        {
+          "$ref": "#/texts/88"
+        }
+      ],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [],
+      "orig": "The Separation",
+      "text": "The Separation",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/83",
+      "parent": {
+        "$ref": "#/texts/82"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "\"Friend after friend departs.\"",
+      "text": "\"Friend after friend departs.\""
+    },
+    {
+      "self_ref": "#/texts/84",
+      "parent": {
+        "$ref": "#/texts/82"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "And they are gone-that little band\nOf friends-the firm and true!\nWe feel the void which absence makes,\nWith joy, and sorrow too.",
+      "text": "And they are gone-that little band\nOf friends-the firm and true!\nWe feel the void which absence makes,\nWith joy, and sorrow too."
+    },
+    {
+      "self_ref": "#/texts/85",
+      "parent": {
+        "$ref": "#/texts/82"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "We joy that duties call them forth,\nClad in an armor bright;\nWith shield of faith, their surest guard,\nAnd sword of truth and light.",
+      "text": "We joy that duties call them forth,\nClad in an armor bright;\nWith shield of faith, their surest guard,\nAnd sword of truth and light."
+    },
+    {
+      "self_ref": "#/texts/86",
+      "parent": {
+        "$ref": "#/texts/82"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "We bid God speed their parting steps,\nAnd bless the righteous cause:-\nWhere'er the path of duty points,\nMay duty never pause.",
+      "text": "We bid God speed their parting steps,\nAnd bless the righteous cause:-\nWhere'er the path of duty points,\nMay duty never pause."
+    },
+    {
+      "self_ref": "#/texts/87",
+      "parent": {
+        "$ref": "#/texts/82"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "And yet, we sorrow most of all,\nAnd from the heart deplore,\nThat we perchance on earth again\nMay see these friends no more.",
+      "text": "And yet, we sorrow most of all,\nAnd from the heart deplore,\nThat we perchance on earth again\nMay see these friends no more."
+    },
+    {
+      "self_ref": "#/texts/88",
+      "parent": {
+        "$ref": "#/texts/82"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Their works shall live when other deeds,\nWhich ask a nation's fame,\nHave sank beneath Time's whelming wave,\nUnhonored and unnamed.",
+      "text": "Their works shall live when other deeds,\nWhich ask a nation's fame,\nHave sank beneath Time's whelming wave,\nUnhonored and unnamed."
+    },
+    {
+      "self_ref": "#/texts/89",
+      "parent": {
+        "$ref": "#/texts/0"
+      },
+      "children": [
+        {
+          "$ref": "#/groups/9"
+        }
+      ],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [],
+      "orig": "My Country",
+      "text": "My Country",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/90",
+      "parent": {
+        "$ref": "#/groups/9"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Oh! speak not of heathenish darkness again,\nNor tell me of lands held in error's dread chain!\nWhere-where is the nation so erring as we,\nWho claim the proud name of the \"",
+      "text": "Oh! speak not of heathenish darkness again,\nNor tell me of lands held in error's dread chain!\nWhere-where is the nation so erring as we,\nWho claim the proud name of the \""
+    },
+    {
+      "self_ref": "#/texts/91",
+      "parent": {
+        "$ref": "#/groups/9"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "home of the free",
+      "text": "home of the free",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/92",
+      "parent": {
+        "$ref": "#/groups/9"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "\"!\nWhat a throb do the lov'd ties of country awake\nIn the heart of the exile!-for time cannot break\nThe sweet vision of home, and all he loved well,\nWhich has thrown o'er his pathway a magical spell.\nCan the name of \"",
+      "text": "\"!\nWhat a throb do the lov'd ties of country awake\nIn the heart of the exile!-for time cannot break\nThe sweet vision of home, and all he loved well,\nWhich has thrown o'er his pathway a magical spell.\nCan the name of \""
+    },
+    {
+      "self_ref": "#/texts/93",
+      "parent": {
+        "$ref": "#/groups/9"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "my country",
+      "text": "my country",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/94",
+      "parent": {
+        "$ref": "#/groups/9"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "\"-the deeds which we sing-\nBe honored-revered-'midst pollution and sin?\nCan the names of our fathers who perished in fight,\nBe hallowed in story, midst slavery's blight?\nWhen America's standard is floating so fair,\nI blush that the impress of falsehood is there;\nThat oppression and mockery dim the high fame,\nThat seeks from all nations a patriot's name.\nSpeak not of \"my country,\" unless she shall be,\nIn truth, the bright home of the \"brave and the free!\"\nTill the dark stain of slavery is washed from her hand,\nA tribute of homage she cannot command.",
+      "text": "\"-the deeds which we sing-\nBe honored-revered-'midst pollution and sin?\nCan the names of our fathers who perished in fight,\nBe hallowed in story, midst slavery's blight?\nWhen America's standard is floating so fair,\nI blush that the impress of falsehood is there;\nThat oppression and mockery dim the high fame,\nThat seeks from all nations a patriot's name.\nSpeak not of \"my country,\" unless she shall be,\nIn truth, the bright home of the \"brave and the free!\"\nTill the dark stain of slavery is washed from her hand,\nA tribute of homage she cannot command."
+    },
+    {
+      "self_ref": "#/texts/95",
+      "parent": {
+        "$ref": "#/texts/0"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/96"
+        },
+        {
+          "$ref": "#/texts/97"
+        },
+        {
+          "$ref": "#/texts/98"
+        },
+        {
+          "$ref": "#/texts/99"
+        }
+      ],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [],
+      "orig": "Hours of Childhood",
+      "text": "Hours of Childhood",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/96",
+      "parent": {
+        "$ref": "#/texts/95"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "\"Blest hours of childhood! then, and then alone,\nDance we the revels gay round pleasure's throne.\"",
+      "text": "\"Blest hours of childhood! then, and then alone,\nDance we the revels gay round pleasure's throne.\""
+    },
+    {
+      "self_ref": "#/texts/97",
+      "parent": {
+        "$ref": "#/texts/95"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Dear cherished hours, how much ye tell\nOf all we've known, and loved so well!\nOn memory's page there is a leaf,\nBearing a trace of pleasures brief;\nOf schoolday mirth, of pastime gay,\nWith which we whiled those hours away.",
+      "text": "Dear cherished hours, how much ye tell\nOf all we've known, and loved so well!\nOn memory's page there is a leaf,\nBearing a trace of pleasures brief;\nOf schoolday mirth, of pastime gay,\nWith which we whiled those hours away."
+    },
+    {
+      "self_ref": "#/texts/98",
+      "parent": {
+        "$ref": "#/texts/95"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "And those we loved in early youth,\nWith all the fervency of truth-\nThey seem to live, and pass us by,\nWith laughing lip and beaming eye.\nEach favorite spot, each winding stream,\nWhere we have watched the bright sunbeam,\nAppears at memory's magic spell-\nAnd joys, to which we bid farewell.",
+      "text": "And those we loved in early youth,\nWith all the fervency of truth-\nThey seem to live, and pass us by,\nWith laughing lip and beaming eye.\nEach favorite spot, each winding stream,\nWhere we have watched the bright sunbeam,\nAppears at memory's magic spell-\nAnd joys, to which we bid farewell."
+    },
+    {
+      "self_ref": "#/texts/99",
+      "parent": {
+        "$ref": "#/texts/95"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "When grief and bliss are in the train\nOf hours we ne'er shall live again;\nWhen sorrow clouds our after years,\nAnd fills our cup with bitter tears;\n'Tis then we wait a sigh to ye\nO by-gone days of memory.",
+      "text": "When grief and bliss are in the train\nOf hours we ne'er shall live again;\nWhen sorrow clouds our after years,\nAnd fills our cup with bitter tears;\n'Tis then we wait a sigh to ye\nO by-gone days of memory."
+    },
+    {
+      "self_ref": "#/texts/100",
+      "parent": {
+        "$ref": "#/texts/0"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/101"
+        },
+        {
+          "$ref": "#/texts/102"
+        },
+        {
+          "$ref": "#/texts/103"
+        }
+      ],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [],
+      "orig": "An Appeal to Woman",
+      "text": "An Appeal to Woman",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/101",
+      "parent": {
+        "$ref": "#/texts/100"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Oh, woman, woman, in thy brightest hour\nOf conscious worth, of pride, of conscious power,\nOh, nobly dare to act a Christian's part,\nThat well befits a lovely woman's heart!\nDare to be good, as thou canst dare be great;\nDespise the taunts of envy, scorn and hate;\nOur \"skins may differ,\" but from thee we claim\nA sister's privilege, in a sister's name.",
+      "text": "Oh, woman, woman, in thy brightest hour\nOf conscious worth, of pride, of conscious power,\nOh, nobly dare to act a Christian's part,\nThat well befits a lovely woman's heart!\nDare to be good, as thou canst dare be great;\nDespise the taunts of envy, scorn and hate;\nOur \"skins may differ,\" but from thee we claim\nA sister's privilege, in a sister's name."
+    },
+    {
+      "self_ref": "#/texts/102",
+      "parent": {
+        "$ref": "#/texts/100"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "We are thy sisters-God has truly said,\nThat of one blood, the nations he has made.\nOh, Christian woman, in a Christian land,\nCanst thou unblushing read this great command?\nSuffer the wrongs which wring our inmost heart\nTo draw one throb of pity on thy part;\nOur \"skins may differ,\" but from thee we claim\nA sister's privilege, in a sister's name.",
+      "text": "We are thy sisters-God has truly said,\nThat of one blood, the nations he has made.\nOh, Christian woman, in a Christian land,\nCanst thou unblushing read this great command?\nSuffer the wrongs which wring our inmost heart\nTo draw one throb of pity on thy part;\nOur \"skins may differ,\" but from thee we claim\nA sister's privilege, in a sister's name."
+    },
+    {
+      "self_ref": "#/texts/103",
+      "parent": {
+        "$ref": "#/texts/100"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Oh, woman!-though upon thy fairer brow\nThe hues of roses and of lilies glow-\nThese soon must wither in their kindred earth,\nFrom whence the fair and dark have equal birth.\nLet a bright halo o'er thy virtues shed\nA lustre, that shall live when thou art dead;\nLet coming ages learn to bless thy name\nUpon the altar of immortal fame.",
+      "text": "Oh, woman!-though upon thy fairer brow\nThe hues of roses and of lilies glow-\nThese soon must wither in their kindred earth,\nFrom whence the fair and dark have equal birth.\nLet a bright halo o'er thy virtues shed\nA lustre, that shall live when thou art dead;\nLet coming ages learn to bless thy name\nUpon the altar of immortal fame."
+    },
+    {
+      "self_ref": "#/texts/104",
+      "parent": {
+        "$ref": "#/texts/0"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/105"
+        },
+        {
+          "$ref": "#/texts/106"
+        },
+        {
+          "$ref": "#/texts/107"
+        },
+        {
+          "$ref": "#/texts/108"
+        },
+        {
+          "$ref": "#/texts/109"
+        },
+        {
+          "$ref": "#/groups/10"
+        },
+        {
+          "$ref": "#/texts/113"
+        },
+        {
+          "$ref": "#/texts/114"
+        },
+        {
+          "$ref": "#/texts/115"
+        }
+      ],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [],
+      "orig": "The Slave Girl\u2019s Farewell",
+      "text": "The Slave Girl's Farewell",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/105",
+      "parent": {
+        "$ref": "#/texts/104"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "The incident which suggested the following lines is this:-A young girl was living with her mother in one of the West Indian Islands, quite unconscious of her being a slave. Her master, on leaving the Island for a permanent residence in Louisiana, cruelly separated the girl from her parent forever.",
+      "text": "The incident which suggested the following lines is this:-A young girl was living with her mother in one of the West Indian Islands, quite unconscious of her being a slave. Her master, on leaving the Island for a permanent residence in Louisiana, cruelly separated the girl from her parent forever."
+    },
+    {
+      "self_ref": "#/texts/106",
+      "parent": {
+        "$ref": "#/texts/104"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Mother, I leave thee-thou hast been,\nThrough long, long years of pain,\nThe only hope my fond heart knew;\nOr e'er shall know again.",
+      "text": "Mother, I leave thee-thou hast been,\nThrough long, long years of pain,\nThe only hope my fond heart knew;\nOr e'er shall know again."
+    },
+    {
+      "self_ref": "#/texts/107",
+      "parent": {
+        "$ref": "#/texts/104"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "The sails are set-my master waits\nTo bear me far from thee;\nI linger-can I give thee up,\nAnd cross the fearful sea?",
+      "text": "The sails are set-my master waits\nTo bear me far from thee;\nI linger-can I give thee up,\nAnd cross the fearful sea?"
+    },
+    {
+      "self_ref": "#/texts/108",
+      "parent": {
+        "$ref": "#/texts/104"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Oh, let me gaze! how bright it seems,\nAs busy memory flies,\nTo view those scenes of other days,\nBeneath those bright blue skies.",
+      "text": "Oh, let me gaze! how bright it seems,\nAs busy memory flies,\nTo view those scenes of other days,\nBeneath those bright blue skies."
+    },
+    {
+      "self_ref": "#/texts/109",
+      "parent": {
+        "$ref": "#/texts/104"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "The little hut where I have played\nIn childhood's fearless hours-\nThe murmuring stream-the mossy bank,\nWhere I have gathered flowers.",
+      "text": "The little hut where I have played\nIn childhood's fearless hours-\nThe murmuring stream-the mossy bank,\nWhere I have gathered flowers."
+    },
+    {
+      "self_ref": "#/texts/110",
+      "parent": {
+        "$ref": "#/groups/10"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "I knew not",
+      "text": "I knew not"
+    },
+    {
+      "self_ref": "#/texts/111",
+      "parent": {
+        "$ref": "#/groups/10"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "then",
+      "text": "then",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/112",
+      "parent": {
+        "$ref": "#/groups/10"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "I was a slave,\nOr that another's will,\nSave thine, could bend my spirit's pride;\nOr bid my lips be still.",
+      "text": "I was a slave,\nOr that another's will,\nSave thine, could bend my spirit's pride;\nOr bid my lips be still."
+    },
+    {
+      "self_ref": "#/texts/113",
+      "parent": {
+        "$ref": "#/texts/104"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Who now will soothe me at my toil,\nOr bathe my weary brow?\nOr shield me when the heavy lash\nIs raised to give the blow?",
+      "text": "Who now will soothe me at my toil,\nOr bathe my weary brow?\nOr shield me when the heavy lash\nIs raised to give the blow?"
+    },
+    {
+      "self_ref": "#/texts/114",
+      "parent": {
+        "$ref": "#/texts/104"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Thy fond arms press me-and I feel\nThy tears upon my cheek;\nTears are the only language now,\nA mother's love can speak.",
+      "text": "Thy fond arms press me-and I feel\nThy tears upon my cheek;\nTears are the only language now,\nA mother's love can speak."
+    },
+    {
+      "self_ref": "#/texts/115",
+      "parent": {
+        "$ref": "#/texts/104"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Think of me, mother, as I bend\nMy way across the sea;\nAnd midst thy tears, a blessing waft,\nTo her who prays for thee.",
+      "text": "Think of me, mother, as I bend\nMy way across the sea;\nAnd midst thy tears, a blessing waft,\nTo her who prays for thee."
+    },
+    {
+      "self_ref": "#/texts/116",
+      "parent": {
+        "$ref": "#/texts/0"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/117"
+        },
+        {
+          "$ref": "#/texts/118"
+        },
+        {
+          "$ref": "#/texts/119"
+        },
+        {
+          "$ref": "#/texts/120"
+        },
+        {
+          "$ref": "#/texts/121"
+        }
+      ],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [],
+      "orig": "A Prayer",
+      "text": "A Prayer",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/117",
+      "parent": {
+        "$ref": "#/texts/116"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Father, we lift the suppliant eye,\nTo where thou reigns't above;\nWe feel that thou canst not deny\nThe children of thy love.",
+      "text": "Father, we lift the suppliant eye,\nTo where thou reigns't above;\nWe feel that thou canst not deny\nThe children of thy love."
+    },
+    {
+      "self_ref": "#/texts/118",
+      "parent": {
+        "$ref": "#/texts/116"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Unshaken faith, unwavering trust,\nAre all that we can bring;\nWe are thy children, though in dust,\nTo thee we dare to cling.",
+      "text": "Unshaken faith, unwavering trust,\nAre all that we can bring;\nWe are thy children, though in dust,\nTo thee we dare to cling."
+    },
+    {
+      "self_ref": "#/texts/119",
+      "parent": {
+        "$ref": "#/texts/116"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "We know that thou wilt not forsake\nThe poor and trembling slave;\nFor him the blessed Saviour spake;\nAnd him he came to save.",
+      "text": "We know that thou wilt not forsake\nThe poor and trembling slave;\nFor him the blessed Saviour spake;\nAnd him he came to save."
+    },
+    {
+      "self_ref": "#/texts/120",
+      "parent": {
+        "$ref": "#/texts/116"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "We feel the chains that bind us all,\nAnd bend us to man's will;\nBut can they hold our souls enthrall'd,\nOr bid our voice be still?",
+      "text": "We feel the chains that bind us all,\nAnd bend us to man's will;\nBut can they hold our souls enthrall'd,\nOr bid our voice be still?"
+    },
+    {
+      "self_ref": "#/texts/121",
+      "parent": {
+        "$ref": "#/texts/116"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "No:-for thy power is all supreme,\nThy word shall yet stand firm;\nAnd master and the slave shall e'en\nTo thee for mercy turn.",
+      "text": "No:-for thy power is all supreme,\nThy word shall yet stand firm;\nAnd master and the slave shall e'en\nTo thee for mercy turn."
+    },
+    {
+      "self_ref": "#/texts/122",
+      "parent": {
+        "$ref": "#/texts/0"
+      },
+      "children": [
+        {
+          "$ref": "#/pictures/2"
+        },
+        {
+          "$ref": "#/groups/11"
+        },
+        {
+          "$ref": "#/groups/12"
+        },
+        {
+          "$ref": "#/groups/13"
+        },
+        {
+          "$ref": "#/groups/14"
+        },
+        {
+          "$ref": "#/groups/15"
+        }
+      ],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [],
+      "orig": "Colophon",
+      "text": "Colophon",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/123",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [],
+      "orig": "The Standard Ebooks logo.",
+      "text": "The Standard Ebooks logo."
+    },
+    {
+      "self_ref": "#/texts/124",
+      "parent": {
+        "$ref": "#/groups/11"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Poetry",
+      "text": "Poetry",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/125",
+      "parent": {
+        "$ref": "#/groups/11"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "was compiled from poems published between 1831 and 1836 by",
+      "text": "was compiled from poems published between 1831 and 1836 by"
+    },
+    {
+      "self_ref": "#/texts/126",
+      "parent": {
+        "$ref": "#/groups/11"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Sarah Louisa Forten Purvis",
+      "text": "Sarah Louisa Forten Purvis",
+      "hyperlink": "https://en.wikipedia.org/wiki/Sarah_Louisa_Forten_Purvis"
+    },
+    {
+      "self_ref": "#/texts/127",
+      "parent": {
+        "$ref": "#/groups/11"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ".",
+      "text": "."
+    },
+    {
+      "self_ref": "#/texts/128",
+      "parent": {
+        "$ref": "#/groups/12"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "This ebook was transcribed and produced for",
+      "text": "This ebook was transcribed and produced for"
+    },
+    {
+      "self_ref": "#/texts/129",
+      "parent": {
+        "$ref": "#/groups/12"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Standard Ebooks",
+      "text": "Standard Ebooks",
+      "hyperlink": "https://standardebooks.org/"
+    },
+    {
+      "self_ref": "#/texts/130",
+      "parent": {
+        "$ref": "#/groups/12"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "by",
+      "text": "by"
+    },
+    {
+      "self_ref": "#/texts/131",
+      "parent": {
+        "$ref": "#/groups/12"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Weijia Cheng",
+      "text": "Weijia Cheng",
+      "hyperlink": "https://weijiarhymeswith.asia/"
+    },
+    {
+      "self_ref": "#/texts/132",
+      "parent": {
+        "$ref": "#/groups/12"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ",\nand is based on digital scans from the",
+      "text": ",\nand is based on digital scans from the"
+    },
+    {
+      "self_ref": "#/texts/133",
+      "parent": {
+        "$ref": "#/groups/12"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Internet Archive",
+      "text": "Internet Archive",
+      "hyperlink": "https://standardebooks.org/ebooks/sarah-louisa-forten-purvis/poetry#page-scans"
+    },
+    {
+      "self_ref": "#/texts/134",
+      "parent": {
+        "$ref": "#/groups/12"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ".",
+      "text": "."
+    },
+    {
+      "self_ref": "#/texts/135",
+      "parent": {
+        "$ref": "#/groups/13"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "The cover page is adapted from",
+      "text": "The cover page is adapted from"
+    },
+    {
+      "self_ref": "#/texts/136",
+      "parent": {
+        "$ref": "#/groups/13"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Sunday Morning",
+      "text": "Sunday Morning",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/137",
+      "parent": {
+        "$ref": "#/groups/13"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ",\na painting completed in 1877 by",
+      "text": ",\na painting completed in 1877 by"
+    },
+    {
+      "self_ref": "#/texts/138",
+      "parent": {
+        "$ref": "#/groups/13"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Thomas Waterman Wood",
+      "text": "Thomas Waterman Wood",
+      "hyperlink": "https://en.wikipedia.org/wiki/Thomas_Waterman_Wood"
+    },
+    {
+      "self_ref": "#/texts/139",
+      "parent": {
+        "$ref": "#/groups/13"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ".\nThe cover and title pages feature the",
+      "text": ".\nThe cover and title pages feature the"
+    },
+    {
+      "self_ref": "#/texts/140",
+      "parent": {
+        "$ref": "#/groups/13"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "League Spartan",
+      "text": "League Spartan",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/141",
+      "parent": {
+        "$ref": "#/groups/13"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "and",
+      "text": "and"
+    },
+    {
+      "self_ref": "#/texts/142",
+      "parent": {
+        "$ref": "#/groups/13"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Sorts Mill Goudy",
+      "text": "Sorts Mill Goudy",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/143",
+      "parent": {
+        "$ref": "#/groups/13"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "typefaces created in 2014 and 2009 by",
+      "text": "typefaces created in 2014 and 2009 by"
+    },
+    {
+      "self_ref": "#/texts/144",
+      "parent": {
+        "$ref": "#/groups/13"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "The League of Moveable Type",
+      "text": "The League of Moveable Type",
+      "hyperlink": "https://www.theleagueofmoveabletype.com/"
+    },
+    {
+      "self_ref": "#/texts/145",
+      "parent": {
+        "$ref": "#/groups/13"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ".",
+      "text": "."
+    },
+    {
+      "self_ref": "#/texts/146",
+      "parent": {
+        "$ref": "#/groups/14"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "This edition was released on",
+      "text": "This edition was released on"
+    },
+    {
+      "self_ref": "#/texts/147",
+      "parent": {
+        "$ref": "#/groups/14"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "May 21, 2026, 6:29 p.m.",
+      "text": "May 21, 2026, 6:29 p.m.",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/148",
+      "parent": {
+        "$ref": "#/groups/14"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "and is based on",
+      "text": "and is based on"
+    },
+    {
+      "self_ref": "#/texts/149",
+      "parent": {
+        "$ref": "#/groups/14"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "revision 936122b",
+      "text": "revision 936122b",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/150",
+      "parent": {
+        "$ref": "#/groups/14"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ".\nThe first edition of this ebook was released on\nDecember 6, 2023, 8:52 p.m.\nYou can check for updates to this ebook, view its revision history, or download it for different ereading systems at",
+      "text": ".\nThe first edition of this ebook was released on\nDecember 6, 2023, 8:52 p.m.\nYou can check for updates to this ebook, view its revision history, or download it for different ereading systems at"
+    },
+    {
+      "self_ref": "#/texts/151",
+      "parent": {
+        "$ref": "#/groups/14"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "standardebooks.org/ebooks/sarah-louisa-forten-purvis/poetry",
+      "text": "standardebooks.org/ebooks/sarah-louisa-forten-purvis/poetry",
+      "hyperlink": "https://standardebooks.org/ebooks/sarah-louisa-forten-purvis/poetry"
+    },
+    {
+      "self_ref": "#/texts/152",
+      "parent": {
+        "$ref": "#/groups/14"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ".",
+      "text": "."
+    },
+    {
+      "self_ref": "#/texts/153",
+      "parent": {
+        "$ref": "#/groups/15"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "The volunteer-driven Standard Ebooks project relies on readers like you to submit typos, corrections, and other improvements. Anyone can contribute at",
+      "text": "The volunteer-driven Standard Ebooks project relies on readers like you to submit typos, corrections, and other improvements. Anyone can contribute at"
+    },
+    {
+      "self_ref": "#/texts/154",
+      "parent": {
+        "$ref": "#/groups/15"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "standardebooks.org",
+      "text": "standardebooks.org",
+      "hyperlink": "https://standardebooks.org/"
+    },
+    {
+      "self_ref": "#/texts/155",
+      "parent": {
+        "$ref": "#/groups/15"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ".",
+      "text": "."
+    },
+    {
+      "self_ref": "#/texts/156",
+      "parent": {
+        "$ref": "#/texts/0"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/157"
+        },
+        {
+          "$ref": "#/groups/16"
+        },
+        {
+          "$ref": "#/texts/161"
+        },
+        {
+          "$ref": "#/groups/17"
+        }
+      ],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [],
+      "orig": "Uncopyright",
+      "text": "Uncopyright",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/157",
+      "parent": {
+        "$ref": "#/texts/156"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "May you do good and not evil.\nMay you find forgiveness for yourself and forgive others.\nMay you share freely, never taking more than you give.",
+      "text": "May you do good and not evil.\nMay you find forgiveness for yourself and forgive others.\nMay you share freely, never taking more than you give."
+    },
+    {
+      "self_ref": "#/texts/158",
+      "parent": {
+        "$ref": "#/groups/16"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Copyright pages exist to tell you that you",
+      "text": "Copyright pages exist to tell you that you"
+    },
+    {
+      "self_ref": "#/texts/159",
+      "parent": {
+        "$ref": "#/groups/16"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "can't",
+      "text": "can't",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/160",
+      "parent": {
+        "$ref": "#/groups/16"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "do something. Unlike them, this Uncopyright page exists to tell you that the writing and artwork in this ebook are believed to be in the United States public domain; that is, they are believed to be free of copyright restrictions in the United States. The United States public domain represents our collective cultural heritage, and items in it are free for anyone in the United States to do almost anything at all with, without having to get permission.",
+      "text": "do something. Unlike them, this Uncopyright page exists to tell you that the writing and artwork in this ebook are believed to be in the United States public domain; that is, they are believed to be free of copyright restrictions in the United States. The United States public domain represents our collective cultural heritage, and items in it are free for anyone in the United States to do almost anything at all with, without having to get permission."
+    },
+    {
+      "self_ref": "#/texts/161",
+      "parent": {
+        "$ref": "#/texts/156"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Copyright laws are different all over the world, and the source text or artwork in this ebook may still be copyrighted in other countries. If you're not located in the United States, you must check your local laws before using this ebook. Standard Ebooks makes no representations regarding the copyright status of the source text or artwork in this ebook in any country other than the United States.",
+      "text": "Copyright laws are different all over the world, and the source text or artwork in this ebook may still be copyrighted in other countries. If you're not located in the United States, you must check your local laws before using this ebook. Standard Ebooks makes no representations regarding the copyright status of the source text or artwork in this ebook in any country other than the United States."
+    },
+    {
+      "self_ref": "#/texts/162",
+      "parent": {
+        "$ref": "#/groups/17"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Non-authorship activities performed on items that are in the public domain-so-called \"sweat of the brow\" work-don't create a new copyright. That means that nobody can claim a new copyright on an item that is in the public domain for, among other things, work like digitization, markup, or typography. Regardless, the contributors to this ebook release their contributions under the terms in the",
+      "text": "Non-authorship activities performed on items that are in the public domain-so-called \"sweat of the brow\" work-don't create a new copyright. That means that nobody can claim a new copyright on an item that is in the public domain for, among other things, work like digitization, markup, or typography. Regardless, the contributors to this ebook release their contributions under the terms in the"
+    },
+    {
+      "self_ref": "#/texts/163",
+      "parent": {
+        "$ref": "#/groups/17"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "CC0 1.0 Universal Public Domain Dedication",
+      "text": "CC0 1.0 Universal Public Domain Dedication",
+      "hyperlink": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "self_ref": "#/texts/164",
+      "parent": {
+        "$ref": "#/groups/17"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ", thus dedicating to the worldwide public domain all of the work they've done on this ebook, including but not limited to metadata, the titlepage, imprint, colophon, this Uncopyright, and any changes or enhancements to, or markup on, the original text and artwork. This dedication doesn't change the copyright status of the source text or artwork. We make this dedication in the interest of enriching our global cultural heritage, to promote free and libre culture around the world, and to give back to the unrestricted culture that has given all of us so much.",
+      "text": ", thus dedicating to the worldwide public domain all of the work they've done on this ebook, including but not limited to metadata, the titlepage, imprint, colophon, this Uncopyright, and any changes or enhancements to, or markup on, the original text and artwork. This dedication doesn't change the copyright status of the source text or artwork. We make this dedication in the interest of enriching our global cultural heritage, to promote free and libre culture around the world, and to give back to the unrestricted culture that has given all of us so much."
+    }
+  ],
+  "pictures": [
+    {
+      "self_ref": "#/pictures/0",
+      "parent": {
+        "$ref": "#/texts/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "image": {
+        "mimetype": "image/png",
+        "dpi": 72,
+        "size": {
+          "width": 1400.0,
+          "height": 420.0
+        },
+        "uri": "data:image/png;base64,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6qfm1e7DiVKZ5tTIVSpJr6Tu0VOJf4tj8ni8fRJHl9ZPFPHAFBHnmRGfr0HDE0f6MP2zYGZLqgV3qqeZWULha87U2XRnf3o277wbuwEwm9H8zQymMYkilmIpmtCOlefNAZcwjJcYGkYXrB/+J7IawgPakmNTV2vE49oo/FkDHTKzWswbBMxskabl6cHmdKEz2dNWlfAz3/Elb/F2mFbAdkOK1RT5KHOaNDOzBcUDXjNbTKgJHWlFE5rQgjKmMIXpjOfHULywe2ZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmVsuFhd0Bs8WV1mILzqYuM2jMWEqYCPzFF4xgZPhzYffOLDnVZQPWoQursTQtaEodJjOVCXzLt3zBB2HGwu7hwqaGbMpuHME05tCIMcxhGqWMZiQj+SJMW9j9M7NcPOA1S02r0Jf9WDmmyLe8wAu8GYoL0NohXBhz+3e6B+UVtxFfJi48k4lMYALfM4L3wqR82svRm5V5LbbANuHnPKI+zXo5ipwd7o2pP4LWOeofFN5O26v52ujI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"
+      },
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/1",
+      "parent": {
+        "$ref": "#/texts/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [],
+      "captions": [
+        {
+          "$ref": "#/texts/5"
+        }
+      ],
+      "references": [],
+      "footnotes": [],
+      "image": {
+        "mimetype": "image/png",
+        "dpi": 72,
+        "size": {
+          "width": 220.0,
+          "height": 140.0
+        },
+        "uri": "data:image/png;base64,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"
+      },
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/2",
+      "parent": {
+        "$ref": "#/texts/122"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [],
+      "captions": [
+        {
+          "$ref": "#/texts/123"
+        }
+      ],
+      "references": [],
+      "footnotes": [],
+      "image": {
+        "mimetype": "image/png",
+        "dpi": 72,
+        "size": {
+          "width": 220.0,
+          "height": 140.0
+        },
+        "uri": "data:image/png;base64,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"
+      },
+      "annotations": []
+    }
+  ],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {}
+}

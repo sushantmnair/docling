@@ -63,3 +63,16 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# %%
+"""
+It worked — the warning is harmless. Tesseract tried to load script/Latin traineddata (a script-specific pack) which isn't installed, fell back to osd for orientation detection, and still correctly OCR'd the document using the base eng pack.
+
+The output is clean: headings, author affiliations, and section markers all parsed correctly. The <!-- image --> placeholder is expected — that's docling marking a figure it didn't OCR (correct behavior, figures aren't text).
+
+To silence the warning permanently:
+
+sudo apt install tesseract-ocr-script-latn
+
+That installs the Latin script traineddata Tesseract was looking for.
+"""
