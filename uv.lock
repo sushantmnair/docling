@@ -1988,7 +1988,11 @@ dependencies = [
     { name = "filetype" },
     { name = "jupyter" },
     { name = "langchain" },
+    { name = "langchain-core" },
+    { name = "langchain-docling" },
     { name = "langchain-google-genai" },
+    { name = "langchain-huggingface" },
+    { name = "langchain-milvus" },
     { name = "langchain-openai" },
     { name = "langcodes" },
     { name = "llama-index-core" },
@@ -1998,7 +2002,10 @@ dependencies = [
     { name = "llama-index-readers-docling" },
     { name = "llama-index-readers-file" },
     { name = "llama-index-vector-stores-milvus" },
+    { name = "matplotlib", version = "3.10.9", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.11'" },
+    { name = "matplotlib", version = "3.11.1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.11'" },
     { name = "pluggy" },
+    { name = "progress-bar" },
     { name = "pydantic" },
     { name = "pydantic-settings" },
     { name = "python-dotenv" },
@@ -2379,7 +2386,11 @@ requires-dist = [
     { name = "huggingface-hub", marker = "extra == 'models-local'", specifier = ">=0.23,<2" },
     { name = "jupyter", specifier = ">=1.1.1" },
     { name = "langchain", specifier = ">=1.4.2" },
+    { name = "langchain-core", specifier = ">=1.6.4" },
+    { name = "langchain-docling", specifier = ">=3.0.0" },
     { name = "langchain-google-genai", specifier = ">=4.4.0" },
+    { name = "langchain-huggingface", specifier = ">=1.2.2" },
+    { name = "langchain-milvus", specifier = ">=0.3.3" },
     { name = "langchain-openai", specifier = ">=1.6.3" },
     { name = "langcodes", specifier = ">=3.5.0,<4.0.0" },
     { name = "librosa", marker = "extra == 'format-video'", specifier = ">=0.10.0,<1.0.0" },
@@ -2393,6 +2404,7 @@ requires-dist = [
     { name = "lxml", marker = "extra == 'format-xml-jats'", specifier = ">=4.0.0,<7.0.0" },
     { name = "mail-parser", marker = "extra == 'format-email'", specifier = ">=4.1.4,<5.0.0" },
     { name = "marko", marker = "extra == 'format-markdown'", specifier = ">=2.1.2,<3.0.0" },
+    { name = "matplotlib", specifier = ">=3.10.9" },
     { name = "mlx-vlm", marker = "python_full_version >= '3.10' and platform_machine == 'arm64' and sys_platform == 'darwin' and extra == 'models-vlm-inline'", specifier = ">=0.6.17,<1.0.0" },
     { name = "mlx-whisper", marker = "python_full_version >= '3.10' and platform_machine == 'arm64' and sys_platform == 'darwin' and extra == 'format-audio'", specifier = ">=0.4.3" },
     { name = "numba", marker = "extra == 'format-audio'", specifier = ">=0.63.0" },
@@ -2416,6 +2428,7 @@ requires-dist = [
     { name = "playwright", marker = "extra == 'format-html-render'", specifier = ">=1.58.0" },
     { name = "pluggy", specifier = ">=1.0.0,<2.0.0" },
     { name = "polyfactory", marker = "extra == 'extract-core'", specifier = ">=2.22.2" },
+    { name = "progress-bar", specifier = ">=8" },
     { name = "pydantic", specifier = ">=2.0.0,<3.0.0" },
     { name = "pydantic-settings", specifier = ">=2.3.0,<3.0.0" },
     { name = "pylatexenc", marker = "extra == 'format-latex'", specifier = ">=2.10,<3.0" },
@@ -4309,6 +4322,19 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/5d/ed/a9c3711721031d3ed8cbd681f90a856538965d1036dc5dd6ed1e48dcc569/langchain_core-1.6.4.tar.gz", hash = "sha256:c1caae770d991bb6f2376bad791970bf77bb29abd1f15823fa9ea7dbac080fa0", size = 1006637, upload-time = "2026-09-21T15:51:08.174Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/c4/f2/41435d9a5448c52a0388f75741edb979fde7415eaa820d6a42878cad7e38/langchain_core-1.6.4-py3-none-any.whl", hash = "sha256:2f940c83f787676ad4dc651d49d053c7ec34bda5a6afcd224da2863ff53a0b84", size = 571970, upload-time = "2026-09-21T15:51:06.555Z" },
+]
+
+[[package]]
+name = "langchain-docling"
+version = "3.0.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "docling-slim", extra = ["convert-core", "feat-chunking", "service-client"] },
+    { name = "langchain-core" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/6b/58/be79d676159e4e8e18ed1732300371e344624cf116d73df461330f274ebb/langchain_docling-3.0.0.tar.gz", hash = "sha256:f2958bfb8ec290a70357489ed723e03f57840ee28ddf112fd00ff06db627df24", size = 9197, upload-time = "2026-08-14T09:36:30.56Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/c3/df/12c42d474d872eefdc65b464cf33d3ed5c9038964d4d0dfa409bd5d1b066/langchain_docling-3.0.0-py3-none-any.whl", hash = "sha256:1e24e27158863592ef05c3141417ba50fdce1879dbbb911103e5623e6e326d2f", size = 8280, upload-time = "2026-08-14T09:36:29.022Z" },
 ]
 
 [[package]]
@@ -7449,6 +7475,12 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/8f/f8/4aefbf76dae091078655fbaf065c34fa900d43b39c2b88e80cbaa71b5efb/prek-0.5.2-py3-none-win_amd64.whl", hash = "sha256:b6c0e4f272f9410f8218d1db0cc7ea10cd8f62db19f820b9ace9f6c2b33bd8dd", size = 5727075, upload-time = "2026-09-02T17:49:23.656Z" },
     { url = "https://files.pythonhosted.org/packages/df/7c/409ced8866197da50e9bcb2c9bf101e3e9a35b98a851c0ccd2a44509eaa5/prek-0.5.2-py3-none-win_arm64.whl", hash = "sha256:0ebea4ef39f6446f6c414a5a506cde8942b17b5899f74cf90e352628085d4005", size = 5489643, upload-time = "2026-09-02T17:49:25.778Z" },
 ]
+
+[[package]]
+name = "progress-bar"
+version = "8"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/b4/fb/d45c6a34e1242f4c7abef5f98aeb29e7096518defcf390bd601b5d3148ff/progress_bar-8.tar.gz", hash = "sha256:befbbcc07fbce96c7b2bed17fffd2203d0269d94ade502b6e003652ba0050efd", size = 5181, upload-time = "2014-12-15T08:45:13.109Z" }
 
 [[package]]
 name = "prometheus-client"

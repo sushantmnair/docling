@@ -41,6 +41,55 @@ from docling.datamodel.vlm_engine_options import (
 from docling.document_converter import DocumentConverter, PdfFormatOption
 
 
+def run_groq_example(input_doc_path: Path):
+    """Picture description via Groq's OpenAI-compatible VLM API"""
+    print("=" * 70)
+    print("Example 3: Granite Vision with Groq")
+    print("=" * 70)
+
+    load_dotenv()
+    api_key = os.getenv("GROQ_API_KEY")
+    if not api_key:
+        print("api key needs to be set")
+        return
+    
+    picture_desc_options = PictureDescriptionVlmEngineOptions.from_preset(
+        "granite_vision", # supplies the description prompt; model is overridden below
+        engine_options=ApiVlmEngineOptions(
+            engine_type=VlmEngineType.API, #generic OpenAI-compatible endpoint
+            url="https://api.groq.com/openai/v1/chat/completions",
+            headers={"Authorization": f"Bearer {api_key}"},
+            params={
+                "model": "qwen/qwen3.8-27b"
+            },
+            timeout=90
+        ),
+    )
+
+    pipeline_options = PdfPipelineOptions()
+    pipeline_options.do_picture_description = True
+    pipeline_options.picture_description_options = picture_desc_options
+    pipeline_options.enable_remote_services = True # required for any API runtime
+
+    doc_converter = DocumentConverter(
+        format_options={
+            InputFormat.PDF: PdfFormatOption(
+                pipeline_options=pipeline_options
+            )
+        }
+    )
+
+    result = doc_converter.convert(input_doc_path)
+
+    for element, _ in result.document.iterate_items():
+        if isinstance(element, PictureItem):
+            print(
+                f"Picture {element.self_ref}\n"
+                f"Caption: {element.caption_text(doc=result.document)}"
+                f"Meta: {element.meta}"
+            )
+
+
 def run_lm_studio_example(input_doc_path: Path):
     """Example 1: Using Granite Vision preset with LM Studio API runtime."""
     print("=" * 70)
@@ -175,11 +224,14 @@ def main():
     data_folder = Path(__file__).parent / "../../tests/data"
     input_doc_path = data_folder / "pdf/sources/2206.01062.pdf"
 
-    # Run LM Studio example
-    run_lm_studio_example(input_doc_path)
+    # # Run LM Studio example
+    # run_lm_studio_example(input_doc_path)
 
-    # Run watsonx.ai example (skips if in CI or credentials not found)
-    run_watsonx_example(input_doc_path)
+    # # Run watsonx.ai example (skips if in CI or credentials not found)
+    # run_watsonx_example(input_doc_path)
+
+    # Run Groq API example
+    run_groq_example(input_doc_path)
 
 
 if __name__ == "__main__":
